@@ -5,13 +5,7 @@
  */
 int main(void)
 {
-	int i;
-
-	i = 97;
-
-	int n;
-
-	n = 65;
+	int i = 97, n = 65;
 
 	do {
 	putchar (i);

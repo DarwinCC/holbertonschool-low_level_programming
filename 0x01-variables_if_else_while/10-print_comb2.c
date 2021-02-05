@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int i,f;
+	int i, f;
 
 	i = 0;
 	while (i <= 9)
@@ -15,7 +15,7 @@ int main(void)
 		{
 			putchar (0 + i);
 			putchar (0 + f);
-			if (i !=9 || f != 9)
+			if (i != 9 || f != 9)
 			{
 				putchar (44);
 				putchar (32);

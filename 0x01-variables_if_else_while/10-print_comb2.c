@@ -13,8 +13,8 @@ int main(void)
 		f = 0;
 		while (f <= 9)
 		{
-			putchar (0 + i);
-			putchar (0 + f);
+			putchar ('0' + i);
+			putchar ('0' + f);
 			if (i != 9 || f != 9)
 			{
 				putchar (44);

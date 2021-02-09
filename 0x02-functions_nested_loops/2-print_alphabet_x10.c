@@ -1,25 +1,22 @@
 #include "holberton.h"
 /**
- * print_alphabetx10 - función principal
+ * print_alphabet_x10 - función principal
  * Description: imprime el abecedario 10 veces
  *
  * Return: indicar el valor de retorno 0
  */
 void print_alphabet_x10(void)
 {
-	char i = 'a';
-	int j = 0;
+	char i;
+	int j;
 
-	do
+	for (j = 0; j <= 9; j++)
 	{
-		do
+		for (i = 'a'; i <= 'z'; i++)
 		{
-		_putchar (i);
-		i++;
-		} while (i <= 'z');
-		i = 'a';
-	j++;
+		_putchar(i);
+		}
 	_putchar ('\n');
-	} while (j <= 9 );
+	}
 }
 

@@ -15,10 +15,10 @@ void more_numbers(void)
 		{
 			if (j >= 10)
 			{
-			putchar('0' + j / 10); /* j/10 es las decenas */
+			_putchar('0' + j / 10); /* j/10 es las decenas */
 			}
-			putchar('0' + j % 10); /* j%10 es las unidades */
+			_putchar('0' + j % 10); /* j%10 es las unidades */
 		}
-	putchar('\n');
+	_putchar('\n');
 	}
 }

@@ -6,7 +6,7 @@
  */
 int  main(void)
 {
-	long long int num, fprimo, fmax;
+	long int num, fprimo, fmax;
 
 	fprimo = 2;
 	num = 612852475143;
@@ -19,7 +19,7 @@ int  main(void)
 		}
 		else
 		{
-			k++;
+			fprimo++;
 		}
 	}
 	printf("%ld\n", fmax);

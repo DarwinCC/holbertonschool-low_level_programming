@@ -2,13 +2,14 @@
 /**
  * print_diagonal - función principal
  * Description: imprime \
- * @n: numero
+ *
+ * @n: numero entero
  *
  * Return: indicar el valor de retorno
  */
 void print_diagonal(int n)
 {
-	int col,row;
+	int col, row;
 
 	if (n > 0)
 	{
@@ -21,6 +22,10 @@ void print_diagonal(int n)
 			_putchar('\\');
 			_putchar('\n');
 		}
+	}
+	else
+	{
+	_putchar('\n');
 	}
 _putchar('\n');
 }

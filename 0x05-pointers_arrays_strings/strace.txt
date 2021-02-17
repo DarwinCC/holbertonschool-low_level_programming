@@ -1,0 +1,29 @@
+[00007faa92c8d137] execve("./101-crackme", ["./101-crackme", "1234abc"], [/* 20 vars */]) = 0
+[00007f974395821c] brk(0)               = 0xf42000
+[00007f9743959617] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[00007f9743959617] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[00007f97439595b7] open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+[00007f9743959544] fstat(3, {st_mode=S_IFREG|0644, st_size=39548, ...}) = 0
+[00007f974395973a] mmap(NULL, 39548, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9743b58000
+[00007f9743959717] close(3)             = 0
+[00007f9743959617] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[00007f97439595b7] open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+[00007f97439595d7] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+[00007f9743959544] fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+[00007f974395973a] mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9743b6a000
+[00007f974395973a] mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9743570000
+[00007f9743959787] mprotect(0x7f974372e000, 2097152, PROT_NONE) = 0
+[00007f974395973a] mmap(0x7f974392e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f974392e000
+[00007f974395973a] mmap(0x7f9743934000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9743934000
+[00007f9743959717] close(3)             = 0
+[00007f974395973a] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9743b68000
+[00007f9743940f74] arch_prctl(ARCH_SET_FS, 0x7f9743b68740) = 0
+[00007f9743959787] mprotect(0x7f974392e000, 16384, PROT_READ) = 0
+[00007f9743959787] mprotect(0x600000, 4096, PROT_READ) = 0
+[00007f9743959787] mprotect(0x7f9743b62000, 4096, PROT_READ) = 0
+[00007f9743959767] munmap(0x7f9743b58000, 39548) = 0
+[00007f974365ed44] fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+[00007f974366853a] mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9743b67000
+[00007f974365f3c0] write(1, "Wrong password\n", 15) = 15
+[00007f9743635109] exit_group(1)        = ?
+[????????????????] +++ exited with 1 +++

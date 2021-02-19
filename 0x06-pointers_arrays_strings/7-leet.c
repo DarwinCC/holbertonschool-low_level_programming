@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * string_toupper - convierte las minúsculas en mayúsculas
+ * leet - convierte las minúsculas en mayúsculas
  * @string: puntero array a convertir
  *
  * Return: char
@@ -21,5 +21,5 @@ char *leet(char *string)
 			}
 		}
 	}
-return(string);
+return (string);
 }

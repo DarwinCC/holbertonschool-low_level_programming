@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * _strchr - funcion principal
+ * print_chessboard - funcion principal
  *
- * @s: puntero
- * @c: caracter buscado
+ * @a: puntero
+ *
  * Return: char
  */
 void print_chessboard(char (*a)[8])

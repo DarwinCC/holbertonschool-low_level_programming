@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _strchr - busca la subcadena needle
+ * _strstr - funcion principal
  *
- * @haystask: puntero en donde buscar(pajar)
+ * @haystack: puntero en donde buscar(pajar)
  * @needle: puntero a buscar(aguja)
  * Return: char
  */
@@ -20,7 +20,7 @@ char *_strstr(char *haystack, char *needle)
 			}
 			haystack++;
 		}
-		if (needle == 0 || *needle == '\0')
+		if (needle[i] == 0 || needle[i] == '\0')
 		{
 			return (0);
 		}
